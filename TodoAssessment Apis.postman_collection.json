@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "959912c2-7e4c-4f27-816b-4f2301ae9ded",
+		"name": "TodoAssessment Apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/entry/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/entry/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"entry",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/entry/list?description=Go buy grocery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/entry/list?description=Go buy grocery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"entry",
+						"list"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Go buy grocery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/entry/list/2?description=Go to grocery shop at 2pm",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/entry/list/2?description=Go to grocery shop at 2pm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"entry",
+						"list",
+						"2"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Go to grocery shop at 2pm"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/entry/list/3?is_hard_delete=1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/entry/list/3?is_hard_delete=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"entry",
+						"list",
+						"3"
+					],
+					"query": [
+						{
+							"key": "is_hard_delete",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
